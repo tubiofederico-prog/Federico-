@@ -7,6 +7,7 @@ export function Button({
   onClick,
   className = '',
   icon: Icon,
+  type = 'button',
 }) {
   const variants = {
     primary: 'bg-brand-600 text-white hover:bg-brand-700 shadow-card hover:shadow-hover',
@@ -24,6 +25,7 @@ export function Button({
 
   return (
     <button
+      type={type}
       onClick={onClick}
       disabled={disabled}
       className={`
